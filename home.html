@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>popcorn time</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body bgcolor="black">
+<div class="div1 sticky">
+<table>
+	<tr>
+		<td><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png" width=70 height=50></td>
+		<td width=84%><img src="https://www.popcorntimes.ws/assets/images/logo.png" width=200 height=50></td>
+		<td><button class="signinb" type="button" onclick="document.getElementById('signin').style.display='block'"> Sign In</button>
+			</td>
+</tr>
+</table>
+	
+
+</div>
+<div id="signin" class="signin">
+	<form class="signin-content1" action="check.jsp" method="get" name="myform">
+		<center>
+		<label><font color="black">username or email</font></label>
+		<br>
+		<input type="text" placeholder="enter username" name="username" required>
+		<br>
+		<label><font color="black">password</font></label>
+		<br>
+		<input type="password" name="password" placeholder="password" required>
+		<br>
+		<br>
+		<input type="submit" name="submit" value="Sign In">
+		<br>
+		<br>
+		<input type="checkbox" id="remember" checked="true"><font color="black">Remember me</font>
+		<br>
+		<hr>
+		<button type="button" class="cancelb" onclick="document.getElementById('signin').style.display='none'">cancel</button>
+		</center>
+	</form>
+
+	</div>
+<div class="div2" id="div2">
+<br><br>
+	<CENTER>
+	<h1><font color="white" face="comic sans MS">WELCOME</font></h1>
+	<H1><font color="white" face="Bedrock">TO</font></H1>
+	<H1><font color="white">POPCORN TIME</font></H1>
+	<br><br>
+	<button class="trialb" onclick="location.href='trial.html'">Start your free trial period</button>
+	</CENTER>
+<br><br><br>
+</div>
+	<script>
+		function loadcontent(path) {
+			$("#div2").load(path);
+		}
+	</script>
+
+<div class="div3">
+	<center>
+	<table>
+		<tr>
+			<td width=30% align="center"><font size=6><a href="#ge">Great Entertainment</a></font></td>
+			<td width=30% align="center"><font size=6><a href="#nac">No annoying contracts</a></font></td>
+			<td width=24% align="center"><font size=6><a href="#ff">Family friendly</a></font></td>
+			<td width=20% align="center"><font size=6><a href="#ob">other benfits</a></font></td>
+		</tr>
+	</table>
+	<div class="divge" id="ge">
+		<hr size="0" width="100%">
+			<img src="https://backgroundcheckall.com/wp-content/uploads/2017/12/netflix-background-8.jpg" width="400" height="250" align="left">
+		<div>
+		<canvas id="mycanvas1" width="500" height="250"></canvas>
+		<script>
+			var c = document.getElementById("mycanvas1");
+			var ctx = c.getContext("2d");
+			ctx.font = "20px Arial";
+			/*var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+			gradient.addColorStop("0"," magenta");
+			gradient.addColorStop("0.5", "blue");
+			gradient.addColorStop("1.0", "red");*/
+			/*ctx.textAlign='left';*/
+			ctx.fillStyle="white";
+			/*ctx.fillText("With your Prime membership, you have access to exclusive Amazon Prime Originals, blockbuster Bollywood movies, regional movies and more.", 10, 40);*/
+			/*var txt = 'line 1\nline 2\nthird line..';*/
+			var txt = "With your Prime membership, you have access\n\n to exclusive Amazon Prime Originals,\n\n blockbuster Bollywood movies, regional movies\n\n and more.";
+			var x = 30;
+			var y = 80;
+			var lineheight = 15;
+			var lines = txt.split('\n');
+
+			for (var i = 0; i<lines.length; i++)
+			    ctx.fillText(lines[i], x, y + (i*lineheight) );
+
+		</script>
+		</div>
+	</div>
+	<div id="nac">
+		<hr size="0" width="100%">
+			<img src="https://d1ic4altzx8ueg.cloudfront.net/finder-us/wp-uploads/sites/5/2017/12/Untitled-design1.jpg" width="400" height="250" align="right">
+		<div>
+		<canvas id="mycanvas2" width="500" height="250"></canvas>
+		<script>
+			var c = document.getElementById("mycanvas2");
+			var ctx = c.getContext("2d");
+			ctx.font = "20px Arial";
+			/*var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+			gradient.addColorStop("0"," magenta");
+			gradient.addColorStop("0.5", "blue");
+			gradient.addColorStop("1.0", "red");*/
+			/*ctx.textAlign='left';*/
+			ctx.fillStyle="white";
+			/*ctx.fillText("With your Prime membership, you have access to exclusive Amazon Prime Originals, blockbuster Bollywood movies, regional movies and more.", 10, 40);*/
+			/*var txt = 'line 1\nline 2\nthird line..';*/
+			var txt = "With your Prime membership, you have access\n\n to exclusive Amazon Prime Originals,\n\n blockbuster Bollywood movies, regional movies\n\n and more.";
+			var x = 30;
+			var y = 80;
+			var lineheight = 15;
+			var lines = txt.split('\n');
+
+			for (var i = 0; i<lines.length; i++)
+			    ctx.fillText(lines[i], x, y + (i*lineheight) );
+
+		</script>
+		</div>
+	</div>
+	<div id="ff">
+		<hr size="0" width="100%">
+			<img src="https://www.slashgear.com/wp-content/uploads/2016/04/amazon-prime-video-800x420.jpg" width="400" height="250" align="left">
+		<div>
+		<canvas id="mycanvas3" width="500" height="250"></canvas>
+		<script>
+			var c = document.getElementById("mycanvas3");
+			var ctx = c.getContext("2d");
+			ctx.font = "20px Arial";
+			/*var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+			gradient.addColorStop("0"," magenta");
+			gradient.addColorStop("0.5", "blue");
+			gradient.addColorStop("1.0", "red");*/
+			/*ctx.textAlign='left';*/
+			ctx.fillStyle="white";
+			/*ctx.fillText("With your Prime membership, you have access to exclusive Amazon Prime Originals, blockbuster Bollywood movies, regional movies and more.", 10, 40);*/
+			/*var txt = 'line 1\nline 2\nthird line..';*/
+			var txt = "With easy to use parental controls and a dedicated kids page,\n\n you can enjoy secure, ad-free kids entertainment.\n\n Kids can enjoy popular TV shows like\n\n Baahubali: The Lost Legends, Powerpuff Girls\n\n and Peppa Pig.";
+			var x = 30;
+			var y = 80;
+			var lineheight = 15;
+			var lines = txt.split('\n');
+
+			for (var i = 0; i<lines.length; i++)
+			    ctx.fillText(lines[i], x, y + (i*lineheight) );
+
+		</script>
+		</div>
+	</div>
+	<div id="ob">
+		<hr size="0" width="100%">
+			<img src="https://nypdecider.files.wordpress.com/2018/08/comcast-prime-video.jpg?quality=90&strip=all&w=646&h=431&crop=1" width="400" height="250" align="right">
+		<div>
+		<canvas id="mycanvas4" width="500" height="250"></canvas>
+		<script>
+			var c = document.getElementById("mycanvas4");
+			var ctx = c.getContext("2d");
+			ctx.font = "20px Arial";
+			/*var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+			gradient.addColorStop("0"," magenta");
+			gradient.addColorStop("0.5", "blue");
+			gradient.addColorStop("1.0", "red");*/
+			/*ctx.textAlign='left';*/
+			ctx.fillStyle="white";
+			/*ctx.fillText("With your Prime membership, you have access to exclusive Amazon Prime Originals, blockbuster Bollywood movies, regional movies and more.", 10, 40);*/
+			/*var txt = 'line 1\nline 2\nthird line..';*/
+			var txt = "With your Prime membership, you have access\n\n to exclusive Amazon Prime Originals,\n\n blockbuster Bollywood movies, regional movies\n\n and more.";
+			var x = 30;
+			var y = 80;
+			var lineheight = 15;
+			var lines = txt.split('\n');
+
+			for (var i = 0; i<lines.length; i++)
+			    ctx.fillText(lines[i], x, y + (i*lineheight) );
+
+		</script>
+		</div>
+		<hr size="0" width="100%">
+	</div>
+	
+	</center>
+	<br>
+</div>
+<div class="div4">
+	<center>
+	<img src="https://www.popcorn.app/appImages/PopcornImages/logo-popcorn-white.png" width=250 height=30>
+	<br>
+	<br>
+	<a href="feedback.html">send us feeback</a>
+	<a href="query.html">help / FAQ</a>
+	<a href="contact.html" target="footer">contact us</a>
+</center>
+	<center><p align="right"><font color="white">all copyrights reserved to popcorn time</font></p></center>
+</div>
+</html>

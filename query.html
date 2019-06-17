@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>displaying the details</title>
+<script type="text/javascript">
+
+	function reply(question){
+		//document.getElementById('ta1').innerHTML=document.myform.questions.value;
+		if(question=="What is Popcorn Time"){
+			document.getElementById('ta1').innerHTML="Popcorn Time is a streaming service that allows our customers to watch a wide variety of award-winning TV shows, movies, documentaries, and more on thousands of internet-connected devices. With Netflix, you can enjoy unlimited viewing of our content without having to watch a single commercial. There's always something new to discover, and more TV shows and movies are added every month! If you're already a member and would like to learn more about using Netflix, visit Getting started with Netflix.";
+		}
+		else if(question=="Free Trial"){
+			document.getElementById('ta1').innerHTML="Try us free for 30 days!* If you enjoy your Netflix trial, do nothing and your membership will automatically continue for as long as you choose to remain a member.\nNetflix membership is a month-to-month subscription that begins on the date you sign up. No contract, no cancellation fees, no commitment. Cancel online anytime, 24 hours a day.\n*Free trial duration and availability may vary by region.";
+		}
+		else if(question=="Membership"){
+			document.getElementById('ta1').innerHTML="Pick your price, pick your plan! Netflix offers 3 membership plans to suit your needs. Your plan will determine how many people can stream Netflix content at once, and whether you can view in Standard Definition (SD), High Definition (HD), or Ultra High Definition (UHD).\nBasic Plan: 1 screen plan SD (watch on 1 device at a time, Standard Definition)\nStandard Plan: 2 screen plan HD (watch on 2 devices at the same time, High Definition when available)\nPremium Plan: 4 screen plan HD/UHD 4K (watch on 4 devices at the same time, includes High Definition and Ultra High Definition when available)\nDVD Plan (only available in the US): US customers can sign up for a DVD-only plan, or add DVDs to their current streaming plan.\nThe first 30 days is free for new members. If you choose to remain a member of Netflix, you'll be billed once a month on the date that you originally signed up. For more info about billing, visit our billing FAQs.\nYou can change or upgrade your plan anytime from your Account page.";
+		}
+		else if(question=="TV Shows and Movies"){
+			document.getElementById('ta1').innerHTML="In over 190 countries, Netflix members get instant access to great content. Netflix has an extensive global content library featuring award-winning Netflix originals, feature films, documentaries, TV shows, and more. Netflix content will vary by region, and may change over time.\nThe more you watch, the better Netflix gets at recommending TV shows and movies you’ll love.\nYou can play, pause, and resume watching, all without commercials or commitments.\nPlus, you can download your favorite shows to your iOS or Android mobile device, or Windows 10 app. With downloads, you can watch while you're on the go and without an internet connection. Go ahead, binge a little!";
+		}
+		else if(question=="Streaming devices"){
+			document.getElementById('ta1').innerHTML="Watch anywhere, anytime, on thousands of devices. Netflix streaming software allows you to instantly watch content from Netflix through any internet-connected device that offers the Netflix app, including smart TVs, game consoles, streaming media players, set-top boxes, smartphones, and tablets. View our Internet Speed Recommendations to achieve the best performance. You can also stream Netflix directly from your computer or laptop. We recommend reviewing the System Requirements for web browser compatibility.\nThe Netflix app may come pre-loaded on certain devices, or users may need to download the Netflix app onto their device. Netflix app functionality may differ between devices. See our Terms of Use for limitations and usage.\nNeed help getting set up? Search our Help Center for the manufacturer of the device you're using.";
+		}
+		else if(question=="Get Started"){
+			document.getElementById('ta1').innerHTML="Follow these easy steps to start watching Netflix today:\nChoose the membership plan that’s right for you.\nCreate an account by entering your email address and creating a password.\nEnter a payment method so you don’t miss a single episode when your free trial ends.\nThat's it. Stream on!\nYou can cancel your free trial at any time during your first 30 days and never be charged. If you choose not to cancel, your account will not be charged until your free trial ends. We'll send you a reminder email three days before your free trial ends to ensure you're still enjoying Netflix.\nAs a member of Netflix, you'll be billed once a month on the date you originally signed up. If you decide Netflix isn't for you, you always have the option to cancel online, anytime.\n";
+		}
+		else
+			document.getElementById('ta1').innerHTML="select a question!!!";
+	}
+</script>
+</head>
+<body style=" background-color: #0F171E; padding-left: 20px;">
+	<form name="myform">
+		<label style="color: white;"><h2>ENTER THE QUESTION</h2></label>
+		<select name="questions" size="1" style="padding-left:10px; padding-top: 10px; padding-right: 10px; padding-bottom:10px;">
+			<option selected>What is Popcorn Time</option>
+			<option>Free Trial</option>
+			<option>Membership</option>
+			<option>TV Shows and Movies</option>
+			<option>Streaming devices</option>
+			<option>Get Started</option>
+		</select>
+		<br><br>
+
+		<button type="button" onclick="reply(document.myform.questions.value); return false" style="padding-left: 50px; padding-right: 50px;"><h3>ASK</h3></button>
+		<br><br>
+	</form>
+	<textarea id="ta1" rows="10" cols="150" readonly></textarea>
+</body>
+</html>
